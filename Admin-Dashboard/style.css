@@ -51,5 +51,55 @@ body {
 }
 
 .sidebar-widget{
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: 1.5rem;
+    border-bottom: 1px solid #606164;
+}
+
+.toggle-btn{
+    width: 30px;
+    height: 30px;
+    color: #FFF;
+    border-radius: 0.425rem;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #323c55;
+    border: none;
+}
+#sidebar:not(.expand) .sidebar-logo,
+#sidebar:not(.expand) a.sidebar-link span{
+    display: none;
+}
+
+.sidebar-logo a{
+    color: #FFF;
+    font-size: 1.15rem;
+    font-weight: 800;
+}
+
+.sidebar-nav{
+    padding: 0;
+    flex: 1 1 auto;
+}
+
+a.sidebar-link{
+    padding: 0.625rem 1.625rem;
+    color: #FFF;
+    display: block;
+    font-weight: 700;
+    white-space: nowrap;
+    border-left: 3px solid transparent;
+}
+
+.sidebar-link i{
+    font-size: 1.1rem;
+    margin-right: 0.75rem;
+}
+
+.sidebar-item{
+    position: relative;
+    margin: 5px 0;
 }
